@@ -1,0 +1,35 @@
+// Variables
+$sm: 5px;
+$md: 10px;
+$lg: 15px;
+$xlg: 20px;
+$xxlg: 25px;
+$xxxlg: 30px;
+
+@mixin padding($padding-size: 0px) {
+    padding: $padding-size;
+}
+
+.px-padding-sm {
+    @include padding($padding-size: $sm);
+}
+
+.px-padding-md {
+    @include padding($padding-size: $md);
+}
+
+.px-padding-lg {
+    @include padding($padding-size: $lg);
+}
+
+.px-padding-xlg {
+    @include padding($padding-size: $xlg);
+}
+
+.px-padding-xxlg {
+    @include padding($padding-size: $xxlg);
+}
+
+.px-padding-xxxlg {
+    @include padding($padding-size: $xxxlg);
+}

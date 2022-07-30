@@ -1,0 +1,45 @@
+@use "utilities/colors";
+@use "utilities/paddings";
+
+@font-face {
+    font-family: "_Genshin";
+    src: url("ja-jp.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: "_Genshin";
+    font-weight: 200;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.03rem;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 15px;
+}
+
+body {
+    background-color: #ffffff;
+    opacity: 1;
+    background-image: url("../../assets/UI/bg.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.body-wrapper {
+    display: flex;
+    flex-direction: row;
+}

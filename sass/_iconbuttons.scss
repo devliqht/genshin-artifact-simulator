@@ -1,0 +1,22 @@
+@use "utilities/colors";
+@use "utilities/paddings";
+
+.close-btn {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    border: 5px $btn-border-bg solid;
+    background: $btn-bg;
+    color: $text-color-dark;
+    border-radius: 15px;
+    justify-content: center;
+    transition: 0.3s;
+
+    &.btn-lg {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 25px;
+    }
+}

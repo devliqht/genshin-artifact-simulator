@@ -1,0 +1,100 @@
+@use "utilities/paddings";
+@use "utilities/colors";
+
+%selector {
+    width: 60px;
+    height: 64px;
+    border: 4px;
+    border-color: rgba(0, 0, 0, 0);
+    margin: $xlg;
+}
+
+%selector:hover {
+    width: 60px;
+    height: 64px;
+    text-align: center;
+    background: #131a27;
+    filter: invert(1);
+    border-radius: 50%;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.234);
+    height: 96px;
+    align-items: center;
+    .header-title-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        p {
+            color: $header-text-color;
+            font-size: 24px;
+            font-weight: 400;
+            margin-left: 35px;
+        }
+    }
+    .header-selectors-wrapper {
+        display: flex;
+        flex-direction: row;
+
+        .weapon-selector img {
+            @extend %selector;
+        }
+        .arti-selector img {
+            @extend %selector;
+        }
+        .items-selector img {
+            @extend %selector;
+        }
+        .food-selector img {
+            @extend %selector;
+        }
+        .materials-selector img {
+            @extend %selector;
+            margin-right: 14px;
+        }
+        .usable-selector img {
+            @extend %selector;
+            margin-right: 14px; // Custom margins needed to match 1:1 with genshin UI
+        }
+        .quest-items-selector img {
+            @extend %selector;
+        }
+        .currency-selector img {
+            @extend %selector;
+        }
+        .teapot-selector img {
+            @extend %selector;
+        }
+    }
+
+    .arti-count-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: $lg;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        p {
+            color: $header-text-color;
+            font-size: 20px;
+            font-weight: 400;
+            margin-right: 15px;
+        }
+    }
+}

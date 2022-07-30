@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Genshin Artifact UI</title>
+        <meta charset="UTF-8" />
+        <meta
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            name="viewport"
+        />
+        <link rel="icon" href="assets/genshin.png" />
+        <link rel="stylesheet" href="compiled/css/style.css" />
+        <script src="https://kit.fontawesome.com/594d35bb81.js" crossorigin="anonymous"></script>
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://devliqht.github.io/genshin-artifact-simulator/"
+        />
+        <meta
+            property="og:title"
+            content="Genshin Artifact Inventory by Matt"
+        />
+        <meta
+            property="og:description"
+            content="A 1:1 recreation of the Genshin Impact Artifact inventory UI, with functionality to add custom artifacts to possibly fool your fellow genshincrafters."
+        />
+        <meta
+            property="og:image"
+            content="https://devliqht.github.io/genshin-artifact-simulator/assets/genshin.png"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="header-wrapper">
+                <div class="header-title-wrapper">
+                    <div class="px-padding-xlg"></div>
+                    <div class="header-title-img">
+                        <img src="assets/UI/artifactInventory.png" />
+                    </div>
+                    <div class="header-titlle">
+                        <h3>Artifacts</h3>
+                    </div>
+                </div>
+                <div class="header-selectors-wrapper">
+                    <div class="weapon-selector">
+                        <img src="assets/UI/weapon_icon.png"/>
+                    </div>
+                    <div class="arti-selector">
+                        <img src="assets/UI/artifact_icon.png" />
+                    </div>
+                    <div class="items-selector">
+                        <img src="assets/UI/char_ascension_icon.png" />
+                    </div>
+                    <div class="food-selector">
+                        <img src="assets/UI/food_icon.png" />
+                    </div>
+                    <div class="materials-selector">
+                        <img src="assets/UI/mats_icon.png" />
+                    </div>
+                    <div class="usable-selector">
+                        <img src="assets/UI/usable_icon.png" />
+                    </div>
+                    <div class="quest-items-selector">
+                        <img src="assets/UI/quest_icon.png" />
+                    </div>
+                    <div class="currency-selector">
+                        <img src="assets/UI/goods_icon.png" />
+                    </div>
+                    <div class="teapot-selector">
+                        <img src="assets/UI/teapot_icon.png" />
+                    </div>
+                </div>
+                <div class="arti-count-wrapper">
+                    <div class="arti-count">
+                        <h3>Artifact <span id="current-arti-count">1</span>/1500</h3>
+                    </div>
+                    <button type="button" class="close-btn btn-lg">
+                        <i class="fas fa-expand-arrows-alt fa-lg"></i>
+                    </button>
+                    <div class="px-padding-xlg"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="body-wrapper">
+                <div class="arti-menu-wrapper">
+                    <div class="arti-menu-row">
+                        <div class="arti-item">
+                            <div class="arti-lock">
+                                <img src="" />
+                            </div>
+                            <div class="arti-active-user">
+                                <img src="" />
+                            </div>
+                            <div class="arti-icon">
+                                <img src="" />
+                            </div>
+                            <div class="arti-rarity">
+                                <img src="" />
+                            </div>
+                            <div class="arti-level">
+                                <img src="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arti-info-wrapper">
+                    <div class="arti-info">
+                        <div class="arti-info-bg">
+                            <div class="arti-info-text-wrapper">
+                                <div class="arti-info-header">
+                                    <div class="arti-name">
+                                        <h1>Song of Life</h1>
+                                    </div>
+                                </div>
+                                <div class="arti-info-body">
+                                    <div class="px-padding-md"></div>
+                                    <div class="arti-type">
+                                        <h3 style="font-size: 20px;">Sands of Eon</h3>
+                                    </div>
+                                    <div class="px-padding-xxxlg"></div>
+                                    <div class="arti-tvr">
+                                        <div class="arti-info-type">
+                                            <h2>DEF</h2>
+                                        </div>
+                                        <div class="arti-type-value">
+                                            <h1 style="font-size: 44px;">58.3%</h1>
+                                        </div>
+                                        <div class="arti-info-rarity">
+                                            <img src="assets/UI/5stars.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="arti-info-icon">
+                                    <img src="assets/artifacts/Item_Song_of_Life.webp" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arti-info-stats">
+                            <div class="arti-ll">
+                                <div class="arti-info-level">
+                                    <h2 style="font-size: 22px;">+20</h2>
+                                </div>
+                                <div class="arti-info-locked">
+                                    <img src="assets/UI/lock.png">
+                                </div>
+                            </div>
+                            <div class="arti-info-substats">
+                                <div class="arti-substat-1">
+                                    <h2>• DEF+69</h2>
+                                </div>
+                                <div class="arti-substat-2">
+                                    <h2>• Energy Recharge+12.6%</h2>
+                                </div>
+                                <div class="arti-substat-3">
+                                    <h2>• ATK+8.9%</h2>
+                                </div>
+                                <div class="arti-substat-4">
+                                    <h2>• CRIT DMG+27.7%</h2>
+                                </div>
+                            </div>
+                            <div class="arti-desc">
+                                <div class="arti-desc-name">
+                                    <h2>Husk of Opulent Dreams:</h2>
+                                </div>
+                                <div class="arti-desc-2pc">
+                                    <i class="fas fa-ban" style="font-size: 1.5em;"></i>
+                                    <h2 style="padding-left: 6px;"> 2-Piece Set: DEF +30%</h2>
+                                </div>
+                                <div class="px-padding-sm"></div>
+                                <div class="arti-desc-4pc">
+                                    <i class="fas fa-ban" style="font-size: 1.5em;"></i>
+                                    <h2 style="padding-left: 6px;"> 4-Piece Set: A character equipped with this Artifact set will obtain the Curiosity effect in the following conditions:
+                                        When on the field, the character gains 1 stack after hitting an opponent with a Geo attack, triggering a maximum of once every 0.3s.
+                                        When off the field, the character gains 1 stack every 3s.
+                                        Curiosity can stack up to 4 times, each providing 6% DEF and a 6% Geo DMG Bonus.
+                                        When 6 seconds pass without gaining a Curiosity stack, 1 stack is lost.</h2>
+                                </div>
+                            </div>
+                            <div class="arti-equipped">
+                                <div class="px-padding-lg"></div>
+                                <div class="arti-char-equipped-icon">
+                                    <img src="assets/char/Character_Yun_Jin_Side_Icon.webp">
+                                </div>
+                                <div class="arti-char-equipped-name">
+                                    <h2>Equipped: <span id="char-equipped-name">Yun Jin</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-left-wrapper">
+                <div class="arti-delete">
+                    <img src="" />
+                </div>
+                <div class="arti-filter">
+                    <img src="" />
+                </div>
+                <div class="arti-options">
+
+                </div>
+                <div class="arti-sort">
+                    <img src="" />
+                </div>
+            </div>
+            <div class="footer-right-wrapper">
+                <div class="details-btn">
+                    <div class="details-btn-icon">
+                        <img src="" />
+                    </div>
+                    <h1>Details</h1>
+                </div>
+            </div>
+        </footer>
+        <div class="uid">
+            <h5>826147391</h5>
+        </div>
+    </body>
+</html>

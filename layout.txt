@@ -1,0 +1,67 @@
+header wrapper
+	header title wrapper
+		header-title-img
+		header-title
+	header-selectors-wrapper
+		weapon-selector
+		arti-selector
+		items-selector
+		food-selector
+		materials-selector
+		usable-selector
+		quest-items-selector
+		currency-selector
+		teapot-selector
+	arti-count-wrapper
+		arti-count
+		exit-btn
+
+body wrapper 
+	arti-menu-wrapper
+		arti-menu-row
+			arti-item
+				arti-lock
+				arti-active-user
+				arti-icon
+				arti-rarity
+				arti-level
+	arti-info-wrapper
+		arti-info
+			arti-info-header
+				arti-name
+			arti-info-body
+				arti-type
+				arti-info-icon
+				arti-tvr 
+					arti-info-type (ATK, DEF, etc.)
+					arti-type-value (ATK value, DEF value, etc.)
+					arti-info-rarity
+			arti-info-stats
+				arti-ll
+					arti-info-level (+20)
+					arti-info-locked
+				arti-info-substats
+					arti-substat-1
+					arti-substat-2
+					arti-substat-3
+					arti-substat-4
+				arti-description
+					arti-desc-name 
+					arti-desc-2pc
+					arti-desc-4pc
+				arti-equipped
+					arti-char-equipped-icon
+					arti-char-equipped-name
+footer wrapper 
+	footer-left-wrapper 
+		arti-delete
+		arti-filter
+		arti-options (Quality, Rarity, Level)
+		arti-sort
+	footer-right-wrapper
+		details-button
+
+uid
+				
+
+			
