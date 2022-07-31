@@ -2,12 +2,11 @@
 @use "utilities/paddings";
 
 .arti-menu-wrapper {
-    background: rgba(0, 0, 0, 0.49);
     width: 1156px;
     height: 843px;
     margin-bottom: 122px;
-    margin-left: 115px;
-    margin-top: 24px;
+    margin-left: 118px;
+    margin-top: 19px;
     padding-right: 19px;
     overflow-y: scroll;
 }
@@ -117,7 +116,7 @@
 }
 
 %arti-desc {
-    color: $text-color-dark;
+    color: $text-color-inactive;
     display: flex;
     flex-direction: row;
 }
@@ -161,4 +160,73 @@
     .arti-char-equipped-name {
         color: $text-color-dark;
     }
+}
+
+.arti-menu-row {
+    display: flex;
+    flex-direction: row;
+    padding-top: 6px;
+}
+.arti-item {
+    display: flex;
+    flex-direction: column;
+    .arti-lock {
+        width: 0;
+        height: 20px;
+    }
+    .arti-lock img {
+        position: relative;
+        left: 4px;
+        top: 3px;
+    }
+    .arti-active-user {
+        width: 0;
+        height: 20px;
+    }
+    .arti-active-user {
+        .activeBG {
+            position: relative;
+            left: 90px;
+            bottom: 26px;
+            z-index: 1;
+        }
+        .active-char {
+            position: relative;
+            left: 96px;
+            bottom: 76px;
+            z-index: 2;
+            width: 36px;
+        }
+    }
+    .arti-icon {
+        height: 64px; // this height is used to adjust the +20 text, which is kinda hacky -- but it works.
+        width: 0;
+    }
+    .arti-icon img {
+        position: relative;
+        width: 128px;
+        bottom: 41px;
+    }
+    .arti-rarity {
+        width: 0;
+        height: 20px;
+    }
+    .arti-rarity img {
+        position: relative;
+        width: 96px;
+        left: 13px;
+    }
+    .arti-level {
+        text-align: center;
+        color: $text-color-dark;
+        padding-top: 2px;
+    }
+}
+.arti-item-bg {
+    background-image: url("../../assets/UI/Rarity_5_background.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 124px;
+    height: 152px;
+    margin-right: 23px;
 }

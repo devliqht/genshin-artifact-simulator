@@ -208,12 +208,11 @@ body {
 }
 
 .arti-menu-wrapper {
-  background: rgba(0, 0, 0, 0.49);
   width: 1156px;
   height: 843px;
   margin-bottom: 122px;
-  margin-left: 115px;
-  margin-top: 24px;
+  margin-left: 118px;
+  margin-top: 19px;
   padding-right: 19px;
   overflow-y: scroll;
 }
@@ -302,7 +301,7 @@ body {
   padding-bottom: 0px;
 }
 .arti-desc .arti-desc-4pc, .arti-desc .arti-desc-2pc {
-  color: #495366;
+  color: #707681;
   display: flex;
   flex-direction: row;
 }
@@ -337,6 +336,75 @@ body {
 }
 .arti-equipped .arti-char-equipped-name {
   color: #495366;
+}
+
+.arti-menu-row {
+  display: flex;
+  flex-direction: row;
+  padding-top: 6px;
+}
+
+.arti-item {
+  display: flex;
+  flex-direction: column;
+}
+.arti-item .arti-lock {
+  width: 0;
+  height: 20px;
+}
+.arti-item .arti-lock img {
+  position: relative;
+  left: 4px;
+  top: 3px;
+}
+.arti-item .arti-active-user {
+  width: 0;
+  height: 20px;
+}
+.arti-item .arti-active-user .activeBG {
+  position: relative;
+  left: 90px;
+  bottom: 26px;
+  z-index: 1;
+}
+.arti-item .arti-active-user .active-char {
+  position: relative;
+  left: 96px;
+  bottom: 76px;
+  z-index: 2;
+  width: 36px;
+}
+.arti-item .arti-icon {
+  height: 64px;
+  width: 0;
+}
+.arti-item .arti-icon img {
+  position: relative;
+  width: 128px;
+  bottom: 41px;
+}
+.arti-item .arti-rarity {
+  width: 0;
+  height: 20px;
+}
+.arti-item .arti-rarity img {
+  position: relative;
+  width: 96px;
+  left: 13px;
+}
+.arti-item .arti-level {
+  text-align: center;
+  color: #495366;
+  padding-top: 2px;
+}
+
+.arti-item-bg {
+  background-image: url("../../assets/UI/Rarity_5_background.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 124px;
+  height: 152px;
+  margin-right: 23px;
 }
 
 .px-padding-sm {
